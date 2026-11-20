@@ -6,6 +6,11 @@ name: tt-teardown
 description: "TikTok爆款拆解数据源（只读）：关键词搜视频、博主作品、视频评论，输出 JSON，不登录不发布。触发词：TikTok、tiktok、抖音国际版、TikTok搜索、TikTok评论、TikTok博主。用户要查 TikTok 视频、评论、爆款选题、竞品监控、KOL 筛选或评论舆情时使用；抖音、小红书、快手、B站、微博、公众号不要用本技能。"
 license: MIT
 version: 1.1.3
+display_name: "TikTok爆款拆解｜结构拆解·钩子分析·评论反馈"
+display_name_en: "TikTok Teardown"
+description_zh: "TikTok爆款拆解数据源（只读，无需登录你的TikTok账号，不发布不点赞不评论，无风控封号问题）：一条命令取到TikTok公开数据，全部以结构化JSON输出，可直接导入Excel/BI或交给AI拆解。\n\n三类能力：①关键词搜视频，支持相关度/最多点赞排序与不限/近1日/近7日/近1月/近3月/近6月时间范围筛选，用于爆款选题、高赞对标与热点追踪；②博主作品抓取，按主页链接或用户名批量拉取公开作品，支持最新/最热排序，用于竞品账号监控与对标分析；③视频评论抓取，按视频链接或作品ID拉取评论与互动数据，用于评论区情绪与需求归因、高赞观点提炼与红人筛选。\n\n典型产出：爆款结构拆解、开头钩子分析、评论反馈归因、可复用复刻清单、对标账号表、选题库、舆情报告。\n\n规模：按量Token单次最多10000条；包月Token搜索/作品最多30、评论最多40，超限返回PLAN_LIMIT。仅需Node.js 16.14+与GUAIKEI_API_TOKEN，零第三方依赖。"
+description_en: "Read-only TikTok viral teardown data source. No login, no posting or liking, so no ban risk. One command returns public TikTok data as structured JSON, ready for Excel, BI or an AI agent.\n\nCapabilities: 1) Keyword search over videos, sorted by relevance or most likes, with time windows (1/7/30/90/180 days), for topic selection, benchmarking and trend tracking. 2) Creator post scraping by profile link or username, newest or hottest first, for competitor account monitoring. 3) Video comment scraping by video link or item ID for sentiment and demand attribution, top-comment mining and influencer screening.\n\nOutputs: viral structure breakdown, hook analysis, comment feedback attribution, replication checklists, benchmark account tables, topic libraries, sentiment reports.\n\nScale: pay-as-you-go up to 10,000 items per call; monthly caps of 30 searches / 30 post queries / 40 comment queries, then PLAN_LIMIT. Needs Node.js 16.14+ and GUAIKEI_API_TOKEN; zero third-party dependencies."
+author: "新郑市怪奇信息技术工作室"
 metadata:
   openclaw:
     emoji: "🎵"
